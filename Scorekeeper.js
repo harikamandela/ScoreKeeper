@@ -28,6 +28,7 @@ p2Button.addEventListener("click", function(){
 		p2Score++;
 		if(p2Score === winningScore){
 			p2ScoreDisplay.classList.add("winner");
+			p1Button.classList.add("winningPlayer");
 			gameOver=true;
 		}
 		p2ScoreDisplay.textContent=p2Score;
